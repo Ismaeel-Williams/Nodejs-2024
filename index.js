@@ -16,7 +16,7 @@ app.get("/", (req, res)=>{
     const n = req.query.n;
     const ans = calculateSum(n);
 
-    res.send('Hello, your answer is', ans);
+    res.send(ans.toString());
 })
 
 app.listen(3000, ()=>{
